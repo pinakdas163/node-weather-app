@@ -8,7 +8,7 @@ buttonEvent.addEventListener('click', (e) => {
     
     const value = inputField.value;
     if (value) {
-        fetch(`http://localhost:3000/weather?address=${value}`)
+        fetch(`/weather?address=${value}`)
         .then(response => {
             return response.json();
         })
